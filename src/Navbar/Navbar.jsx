@@ -26,8 +26,8 @@ export const Navbar = () => {
             <li><Link to='/'> Prices</Link></li>
             <li><Link to='/createaccount'>Create acc.</Link></li>
             <li><Link to='/'>Transfers</Link></li>
-            <li><Link to='/'>Bank</Link></li>
-            <li><Link to='/'>Create</Link></li>
+            <li><Link to='/login'>Bank</Link></li>
+            <li><Link to='/signup'>Create</Link></li>
             </ul>
             </div>
     )
