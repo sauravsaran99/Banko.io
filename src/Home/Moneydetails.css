@@ -1,0 +1,11 @@
+
+.moneyBox0 {
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-around;
+}
+
+.moneyBox1 {
+    display: flex;
+    justify-content: space-around;
+}

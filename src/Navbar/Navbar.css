@@ -1,0 +1,47 @@
+
+.nav {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+ul {
+    list-style: none;
+    padding: 6px;
+}
+
+li {
+    padding: 5px 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(117, 117, 126);
+}
+
+a:hover {
+    color: #fff;
+    
+}
+
+.navIcon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navS {
+    padding: 6.5px 0;
+    width: 14px;
+    height: 14px;
+}
+
+path {
+    color: rgb(216, 216, 218);
+}
+
+path:hover {
+    color: #fff;
+}

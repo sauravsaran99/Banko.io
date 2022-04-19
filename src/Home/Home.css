@@ -1,0 +1,79 @@
+
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(55,30,57,1) 100%);
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.mainHome {
+    width: 98%;
+    height: 98vh;
+    margin: 0 auto;
+    border-radius: 15px;
+    /* border: .3px solid #fff; */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(55,30,57,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* first box start */
+.firstBox {
+    display: flex;
+    justify-content: space-between;
+    height: 54%;
+    width: 98%;
+    margin: 0 auto;
+}
+
+.space {
+    flex: .15;
+}
+
+.ads {
+    flex: .45;
+}
+
+.account {
+    flex: .35;
+}
+
+
+
+/* first box end */
+
+/* second box start */
+
+.secondBox {
+    display: flex;
+    justify-content: space-between;
+    height: 42%;
+    width: 98%;
+    margin: 0 auto;
+}
+
+.moneydetails {
+    flex: .823;
+    background-color: rgba(234, 218, 212, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.card {
+    flex: .15;
+    /* background-color: blueviolet; */
+}
+
+.moneyBox0 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+}
+
+.moneyBox1 {
+    padding: 5px 0;
+}
+
+/* second box end */

@@ -1,0 +1,19 @@
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif; */
+
+.account {
+    display: flex;
+    flex-direction: column;
+}
+
+.adsBox0 {
+    flex: .2;
+}
+
+.adsBox1 {
+    flex: .8;
+    background-color: rgba(234, 218, 212, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}

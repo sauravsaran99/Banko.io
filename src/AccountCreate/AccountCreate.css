@@ -1,0 +1,48 @@
+
+.accountCreate {
+    display: flex;
+    width: 98%;
+    min-height: 98vh;
+}
+
+.forNav {
+    flex: 2;
+}
+
+.bankForm {
+    flex: 7;
+    background-color: rgba(234, 218, 212, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 7px;
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.fansl {
+    display: flex;
+}
+
+#first_name {
+    width: 20%;
+}
+
+#first_name input {
+    width: 80%;
+}
+
+#last_name {
+    /* padding-left: 30px; */
+    width: 40%;
+}
+
+#last_name {
+    width: 100%;
+}
+
+#address {
+    display: block;
+    width: 33.8%;
+}
