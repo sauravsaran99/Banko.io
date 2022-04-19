@@ -11,7 +11,6 @@ function App() {
   useEffect(() => {
     setValue(storeValue.nav)
   }, [storeValue.nav])
-  console.log('my', storeValue.nav)
   
   return (
     <>
