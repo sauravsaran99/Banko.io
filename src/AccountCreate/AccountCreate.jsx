@@ -1,9 +1,11 @@
 
 import '../AccountCreate/AccountCreate.css'
-import { useState } from 'react'
+import { useState } from 'react';
+import axios from 'axios';
 export const AccountCreate = () => {
 
     const [formData, setForm] = useState({
+        status: 'pending',
         bank_name: '',
         first_name: '',
         email: '',
@@ -13,7 +15,8 @@ export const AccountCreate = () => {
         zipPerm: '',
         addressCurrent: '',
         stateCurr: '',
-        zipCurr: ''
+        zipCurr: '',
+        user_id: sessionStorage.getItem("id")
     });
 
     const updateForm = (e) => {
@@ -25,17 +28,23 @@ export const AccountCreate = () => {
 
     const sendData = (e) => {
         e.preventDefault();
-        console.log(formData);
+        // console.log(formData);
+        axios.post('http://localhost:8080/account', formData).then((res) => {
+            console.log(res.data)
+        }).catch(err => console.log(err.message))
         setForm({
-            bank_name: '',
-            first_name: '',
-            last_name: '',
-            addressPermanent: '',
-            statePerm: '',
-            zipPerm: '',
-            addressCurrent: '',
-            stateCurr: '',
-            zipCurr: ''
+        status: 'pending',
+        bank_name: '',
+        first_name: '',
+        email: '',
+        last_name: '',
+        addressPermanent: '',
+        statePerm: '',
+        zipPerm: '',
+        addressCurrent: '',
+        stateCurr: '',
+        zipCurr: '',
+        user_id: sessionStorage.getItem("id")
         })
     }
     return (
@@ -45,7 +54,7 @@ export const AccountCreate = () => {
                 <form onSubmit={sendData}>
                     <div>
                         <h3>Select Bank</h3>
-                        <select value='' name='bank_name' onChange={updateForm} >
+                        <select value={formData.bank_name} name='bank_name' onChange={updateForm} >
                             <option value=''>Choose Bank</option>
                             <option value="SBI">SBI</option>
                             <option value="PNB">PNB</option>
