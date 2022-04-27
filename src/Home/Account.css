@@ -17,3 +17,20 @@ font-family: 'Roboto Condensed', sans-serif; */
     border-radius: 7px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
+
+.adsBox11 {
+    display: flex;
+    justify-content: space-around;
+    padding: 7px 0 7px 0;
+    align-items: center;
+}
+
+.adsBox111 {
+    padding-bottom: 10px;
+}
+
+#adsBox2 img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}

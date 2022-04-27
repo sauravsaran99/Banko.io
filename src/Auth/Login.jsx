@@ -44,7 +44,9 @@ const configForm = (e) => {
             navigate('/');
             dispatch(navbarValue(true));
             sessionStorage.setItem("token", res.data.token);
+            sessionStorage.setItem('account', res.data.account)
             sessionStorage.setItem("id", res.data.id);
+            sessionStorage.setItem("name", res.data.name);
         }
         if(res.data === 'Either email or password is incorrect') {
             alertP(true)

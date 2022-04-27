@@ -23,9 +23,9 @@ export const Navbar = () => {
                 </ul>
         <ul>
             <li><Link to='/'>Home</Link></li>
-            <li><Link to='/'> Prices</Link></li>
+            <li><Link to='/addmoney'>Add money</Link></li>
             <li><Link to='/createaccount'>Create acc.</Link></li>
-            <li><Link to='/'>Transfers</Link></li>
+            <li><Link to='/transfers'>Transfers</Link></li>
             <li><Link to='/login'>Bank</Link></li>
             <li><Link to='/signup'>Create</Link></li>
             </ul>

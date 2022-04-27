@@ -16,7 +16,8 @@ export const AccountCreate = () => {
         addressCurrent: '',
         stateCurr: '',
         zipCurr: '',
-        user_id: sessionStorage.getItem("id")
+        user_id: sessionStorage.getItem("id"),
+        money: ''
     });
 
     const updateForm = (e) => {
@@ -28,7 +29,7 @@ export const AccountCreate = () => {
 
     const sendData = (e) => {
         e.preventDefault();
-        // console.log(formData);
+        console.log(formData);
         axios.post('http://localhost:8080/account', formData).then((res) => {
             console.log(res.data)
         }).catch(err => console.log(err.message))
@@ -44,7 +45,8 @@ export const AccountCreate = () => {
         addressCurrent: '',
         stateCurr: '',
         zipCurr: '',
-        user_id: sessionStorage.getItem("id")
+        user_id: sessionStorage.getItem("id"),
+        money: ''
         })
     }
     return (
@@ -54,7 +56,7 @@ export const AccountCreate = () => {
                 <form onSubmit={sendData}>
                     <div>
                         <h3>Select Bank</h3>
-                        <select value={formData.bank_name} name='bank_name' onChange={updateForm} >
+                        <select value={formData.bank_name} name='bank_name' onChange={updateForm} required>
                             <option value=''>Choose Bank</option>
                             <option value="SBI">SBI</option>
                             <option value="PNB">PNB</option>

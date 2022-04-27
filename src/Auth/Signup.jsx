@@ -13,6 +13,7 @@ export const Signup = () => {
         dispatch(navbarValue(false));
     }, [dispatch])
 const [getForm, setForm] = useState({
+    account: '',
     first_name: '',
     last_name: '',
     email: '',
@@ -27,6 +28,7 @@ const submitForm = (e) => {
     setForm({...getForm, [name]: value})
 }
 
+// console.log(getForm)
 const configForm = (e) => {
     e.preventDefault();
     console.log(getForm)
@@ -44,6 +46,7 @@ const configForm = (e) => {
         }
     }).catch(err => console.log(err.message))
     setForm({
+        account: '',
         first_name: '',
         last_name: '',
         email: '',
@@ -68,6 +71,12 @@ const inputTarget = (e) => {
                 <form className='loginForm' onSubmit={configForm}>
                     <div>
                     <h1>Banko.io</h1>
+                    <h3>Account Types</h3>
+                    <select value={getForm.account} name='account' onChange={submitForm} >
+                        <option value="">Select type</option>
+                        <option value="users">user</option>
+                        <option value="admin">admin</option>
+                    </select>
                     <h3>First Name</h3>
                     <input onClick={inputTarget} type="text" name="first_name" onChange={submitForm} value={getForm.first_name} required/>
                     <h3>Last Name</h3>
